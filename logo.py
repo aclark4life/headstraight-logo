@@ -19,7 +19,7 @@ def create_image(filename):
     d = ImageDraw.Draw(out)
 
     # draw multiline text
-    d.multiline_text((0, 0), "Hs", font=fnt, fill=(0, 0, 0))
+    d.multiline_text((-10, -10), "Hs", font=fnt, fill=(0, 0, 0))
 
     fontname = filename.split(".")[0]  # Remove file extension
     out.save("logo_%s.png" % fontname, "PNG")
