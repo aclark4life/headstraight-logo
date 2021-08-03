@@ -57,4 +57,3 @@ serve: django-serve-webpack
 
 logo:
 	python logo.py
-	open logo.png
