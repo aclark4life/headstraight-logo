@@ -7,7 +7,7 @@ import sys
 out = Image.new("RGB", (400, 400), (255, 255, 255))
 
 # get a font
-fnt = ImageFont.truetype("FreeMono.ttf", 349)
+fnt = ImageFont.truetype("FreeMono.ttf", 300)
 # get a drawing context
 d = ImageDraw.Draw(out)
 
