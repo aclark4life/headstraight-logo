@@ -12,6 +12,6 @@ fnt = ImageFont.truetype("FreeMono.ttf", 300)
 d = ImageDraw.Draw(out)
 
 # draw multiline text
-d.multiline_text((30, 30), "Hs", font=fnt, fill=(0, 0, 0))
+d.multiline_text((30, 40), "Hs", font=fnt, fill=(0, 0, 0))
 
 out.save("logo.png", "PNG")
