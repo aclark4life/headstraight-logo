@@ -21,7 +21,7 @@ def create_image(filename):
     d = ImageDraw.Draw(out)
 
     # draw multiline text
-    d.multiline_text((60, 0), "Hs", font=fnt, fill=(255, 255, 255))
+    d.multiline_text((60, 10), "Hs", font=fnt, fill=(255, 255, 255))
 
     fontname = filename.split(".")[0]  # Remove file extension
     out.save("logo_%s.png" % fontname, "PNG")
