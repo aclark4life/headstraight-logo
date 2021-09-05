@@ -12,8 +12,8 @@ def create_image(filename):
     """
     Create image
     """
-    x = 960
-    y = 960
+    x = 1000
+    y = 1000
 
     out = Image.new("RGB", (x, y), (255, 255, 255))
     # get a font
