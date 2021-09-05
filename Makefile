@@ -57,3 +57,9 @@ serve: django-serve-webpack
 
 logo:
 	python logo.py
+
+open:
+	open logo_NotoSans-Regular.png
+
+.PHONY: o
+o: open

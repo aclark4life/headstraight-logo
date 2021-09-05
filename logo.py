@@ -12,16 +12,21 @@ def create_image(filename):
     """
     Create image
     """
+    x = 960
+    y = 960
 
-    out = Image.new("RGB", (480, 480), (0, 0, 0))
+    out = Image.new("RGB", (x, y), (255, 255, 255))
     # get a font
-    fnt = ImageFont.truetype(filename, 300)
+    fontsize = int(x/2)
+    fnt = ImageFont.truetype(filename, fontsize)
     print(filename)
     # get a drawing context
     d = ImageDraw.Draw(out)
 
     # draw multiline text
-    d.multiline_text((60, 10), "Hs", font=fnt, fill=(255, 255, 255))
+    xoffset = (x/8) + (x/16)
+    yoffset = y/8
+    d.multiline_text((xoffset, yoffset), "Hs", font=fnt, fill=(0, 0, 0))
 
     fontname = filename.split(".")[0]  # Remove file extension
     out.save("logo_%s.png" % fontname, "PNG")
